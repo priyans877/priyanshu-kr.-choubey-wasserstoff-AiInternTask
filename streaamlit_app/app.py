@@ -30,7 +30,7 @@ def main():
 
                 #applying object extraction
                 for idx, obj in enumerate(segmented_objects['objects']):
-                    st.image(obj['image'], caption=f"Object {idx+1}", width=200)
+                    st.image(obj['image'], caption=f"Object {idx}", width=200)
 
                 #applying object identity
                 identified_objects = identify_objects(segmented_objects['objects'])
