@@ -35,9 +35,9 @@ def main():
                 #applying object identity
                 identified_objects = identify_objects(segmented_objects['objects'])
                 st.subheader(identified_objects)
-                st.subheader("Identified Objects")
+                #st.subheader("Identified Objects")
                 for obj_id, obj_data in identified_objects.items():
-                    st.subheader(obj_data)
+                    #st.subheader(obj_data)
                     st.write(f"Object {obj_id}:")
                     for pred in obj_data['top_predictions']:
                         st.write(f"  - {pred['label']}: {pred['probability']:.2f}")
