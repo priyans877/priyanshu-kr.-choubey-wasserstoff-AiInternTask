@@ -7,7 +7,7 @@ def identify_objects(segmented_objects):
     processor = CLIPProcessor.from_pretrained("openai/clip-vit-base-patch32")
 
     #a list of common object classes
-    object_classes = ["person", "car", "chair", "dog", "cat", "table", "plant", "bottle", "book", "phone", "missile", "plate", "cycle", "airplane", "bicycle", "bird", "boat", "bus", "truck", "motorcycle", "train", "laptop", "tv", "keyboard", "mouse", "remote", "cell phone", "microwave", "oven", "toaster", "sink", "refrigerator", "clock", "vase", "scissors", "teddy bear", "hair drier", "toothbrush"]
+    object_classes = ["person", "car", "chair", "dog", "cat", "table", "plant", "bottle", "phone", "missile", "plate", "cycle", "airplane", "bicycle", "bird", "boat", "bus", "truck", "motorcycle", "train", "laptop", "tv", "keyboard", "mouse", "remote", "cell phone", "microwave", "oven", "toaster", "sink", "refrigerator", "clock", "vase", "scissors", "teddy bear", "hair drier", "toothbrush"]
 
     identified_objects = {}
     for obj in segmented_objects:
