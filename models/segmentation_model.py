@@ -40,7 +40,7 @@ def segment_image(image, confidence_threshold=0.7, overlap_threshold=0.3):
         obj_image = image.crop(box)
         
         segmented_objects.append({
-            'id': f'obj_{i-1}',
+            'id': f'obj_{i+1}',
             'image': obj_image,
             'mask': mask,
             'box': box.tolist(),
