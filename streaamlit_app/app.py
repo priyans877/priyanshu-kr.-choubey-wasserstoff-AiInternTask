@@ -34,8 +34,8 @@ def main():
 
                 #applying object identity
                 identified_objects = identify_objects(segmented_objects['objects'])
-                st.subheader(identified_objects)
-                #st.subheader("Identified Objects")
+                #st.subheader(identified_objects)
+                st.subheader("Identified Objects")
                 for obj_id, obj_data in identified_objects.items():
                     #st.subheader(obj_data)
                     st.write(f"Object {obj_id}:")
