@@ -13,7 +13,7 @@ from models.summarization_model import summarize_attributes
 from utils.visualization import visualize_output
 
 def main():
-    st.title("AI Image Segmentation and Object Analysis")
+    st.title("Image Segmentation and Object Analysis")
 
     uploaded_file = st.file_uploader("Choose an image...", type=["jpg", "png", "jpeg"])
     
