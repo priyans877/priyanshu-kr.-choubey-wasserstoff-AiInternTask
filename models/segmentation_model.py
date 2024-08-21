@@ -1,12 +1,12 @@
 import torch
-from torchvision.models.detection import maskrcnn_resnet50_fpn
+from torchvision.models.detection import maskrcnn_resnet50_fpn, MaskRCNN_ResNet50_FPN_Weights
 from torchvision.transforms import functional as F
 import numpy as np
 from PIL import Image
 import cv2
 
 def segment_image(image, confidence_threshold=0.7, overlap_threshold=0.3):
-    model = maskrcnn_resnet50_fpn(pretrained=True)
+    model = maskrcnn_resnet50_fpn(weights=MaskRCNN_ResNet50_FPN_Weights.COCO_V1)
     model.eval()
 
     image_tensor = F.to_tensor(image).unsqueeze(0)
